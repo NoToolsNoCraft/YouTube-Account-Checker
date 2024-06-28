@@ -1,4 +1,4 @@
-const API_KEY = 'ADD API KEY HERE';  // Replace with your actual API key
+const API_KEY = 'AIzaSyD8Xi7C_6dow9y11i20ZQWnlC12b17FlXc';  // Replace with your actual API key
 
 const userAgents = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -115,4 +115,11 @@ async function fetchYouTubeData() {
         console.error('Error fetching YouTube data:', error);
         alert(`Failed to fetch YouTube data: ${error.message}`);
     }
+}
+function howToUse() {
+    alert("This is how you use the app...");
+}
+
+function contactUs() {
+    alert("Contact us at contact@example.com");
 }
