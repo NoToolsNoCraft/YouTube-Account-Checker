@@ -1,4 +1,4 @@
-const API_KEY = 'ADD API KEY HERE';  // Replace with your actual API key
+const API_KEY = 'AIzaSyD8Xi7C_6dow9y11i20ZQWnlC12b17FlXc';  // Replace with your actual API key
 
 const userAgents = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -103,7 +103,7 @@ async function fetchYouTubeData() {
                     <p><strong>Description:</strong> ${channel.snippet.description}</p>
                     <p><strong>Total Views:</strong> ${channel.statistics.viewCount}</p>
                     <p><strong>Number of Videos:</strong> ${channel.statistics.videoCount}</p>
-                    <p><strong>Subscribers:</strong> ${channel.statistics.subscriberCount}</p>
+                    <p><strong>Youtubers Live Subscriber Count:</strong> ${channel.statistics.subscriberCount}</p>
                     <p><strong>Last Video Published At:</strong> ${videoInfo.publishedAt}</p>
                     <p><strong>Latest Video:</strong> ${videoInfo.title}</p>
                     <img src="${videoInfo.thumbnail}" alt="Latest Video Thumbnail">

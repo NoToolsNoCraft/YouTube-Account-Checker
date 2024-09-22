@@ -1,8 +1,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
+    background-color: #fbd4d4;
+    overflow-y: auto; /* Enable scrolling if content overflows */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,34 +9,24 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    padding: 20px;
+    max-width: 400px;
+    min-height: 100px;
+    max-height: 90vh; /* Limits the height of the container */
+    
+    padding: 10px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
+    overflow-y: auto; /* Scroll when content overflows */
 }
 
-.container::before {
-    content: '';
-    position: absolute;
-    top: 200px; /* Adjust this value as needed */
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(45deg, yellow 25%, transparent 25%),
-                      linear-gradient(-45deg, yellow 25%, transparent 25%),
-                      linear-gradient(45deg, transparent 75%, yellow 75%),
-                      linear-gradient(-45deg, transparent 75%, yellow 75%);
-    background-size: 40px 40px; /* Size of each square */
-    background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
-    z-index: -1;
-}
 
 .title {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.1;
-    margin-bottom: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 1;
     display: inline-block; /* Ensure the triangle fits correctly behind the text */
@@ -52,7 +41,6 @@ body {
     height: 0;
     border-left: 130px solid transparent; /* Increased size */
     border-right: 140px solid transparent; /* Increased size */
-    border-bottom: 150px solid yellow; /* Changed to point upwards */
     transform: translate(-50%, -50%) rotate(0deg); /* Rotate 180 degrees to point upwards */
     z-index: -1;
 }
@@ -62,9 +50,9 @@ body {
 }
 
 .subtitle {
-    font-size: 16px;
+    font-size: 20px;
     color: transparent;
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-image: linear-gradient(to right, violet, indigo, blue, green, orange, red);
     -webkit-background-clip: text;
     margin-bottom: 20px;
     display: inline-block;
@@ -90,8 +78,9 @@ body {
 
 input[type="text"] {
     padding: 10px;
-    width: 60%;
+    width: 70%;
     margin-right: 10px;
+    margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -191,7 +180,7 @@ button:hover {
     }
 
     button {
-        width: 80%;
+        width: 40%;
         padding: 10px;
     }
 
@@ -206,7 +195,7 @@ button:hover {
     }
 
     .footer .footer-btn {
-        width: 80%;
+        width: 40%;
         padding: 10px;
     }
 }
